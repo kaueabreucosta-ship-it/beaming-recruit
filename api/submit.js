@@ -52,7 +52,7 @@ module.exports = async (req, res) => {
     (e.title || "").length + (e.author?.name || "").length + (e.description || "").length + (e.footer?.text || "").length + 20;
 
   let embed = {
-    title: "📋 Nova candidatura · Suporte Beaming",
+    title: "📋 Nova candidatura · Suporte 𝑬𝒄𝒍𝒊𝒑𝒔𝒆 𝑩𝒆𝒂𝒎𝒊𝒏𝒈 𝑿",
     color: COLOR,
     author: { name: clip(`${displayName} (@${user.username})`, 256), icon_url: avatarUrl },
     description: `**Discord ID:** \`${user.id}\`\n**Mencionar:** <@${user.id}>\n**Horário:** <t:${now}:F>`,
@@ -88,7 +88,7 @@ module.exports = async (req, res) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          username: "Beaming Recruit",
+          username: "𝑬𝒄𝒍𝒊𝒑𝒔𝒆 𝑩𝒆𝒂𝒎𝒊𝒏𝒈 𝑿 Recruit",
           avatar_url: avatarUrl,
           content: i === 0 ? `Nova candidatura de **${clip(displayName, 80)}** · <@${user.id}>` : undefined,
           embeds: [list[i]],
